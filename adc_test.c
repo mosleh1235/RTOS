@@ -33,6 +33,12 @@ void *_adc_gen(void *arg){
 	// error handle
 	page_msb_handle = mmap_device_io(IO_PORT_SIZE,PAGE_MSB);
 	// error handle
+	set_channel_handle = mmap_device_io(IO_PORT_SIZE,CHANNEL);
+	// error handle
+	wait_gain_handle = mmap_device_io(IO_PORT_SIZE,WAIT_GAIN);
+	// error handle
+	set_polarity_handle = mmap_device_io(IO_PORT_SIZE,POLARITY);
+	// error handle
 }
 
 
